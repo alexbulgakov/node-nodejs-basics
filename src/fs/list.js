@@ -15,7 +15,6 @@ const list = async () => {
     //* Read the files in the directory
     const files = await fs.readdir(dirPath);
 
-    //* Log the list of files
     console.log(files);
   } catch (error) {
     //* Throw an error if the file system operation fails
