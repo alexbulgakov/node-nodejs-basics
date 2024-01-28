@@ -12,7 +12,6 @@ const read = async () => {
 
   //* Log the file data to the console
   readStream.on("data", (chunk) => process.stdout.write(chunk));
-
   readStream.on("error", (error) => console.error("Error:", error.message));
 };
 
